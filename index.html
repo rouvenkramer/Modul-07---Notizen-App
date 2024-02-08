@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTIZEN</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" , src="datetime.js"></script>
+
+</head>
+
+
+<body onload="render()">
+
+
+    <!--HEADER-->
+    <header>
+        <h1 onclick="render()">MyNotes</h1>
+        <button id="trashcanButton" onclick="renderTrash()"></button>
+
+    </header>
+
+    <main>
+        <div id="newNoteDiv" class="newNote">
+            <div class="topicAndSave">
+                <input type="text" placeholder="Betreff" id="noteTopic">
+                </input>
+            </div>
+
+            <textarea type="text" rows="5" placeholder="Notiz" id="noteInput"></textarea>
+
+            <button id="addNoteButton" onclick="addNote()">&#x1f4be</button>
+        </div>
+
+
+        <!--NOTIZEN-->
+        <div id="content">
+        </div>
+
+    </main>
+
+
+
+
+
+</body>
+
+</html>
